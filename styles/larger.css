@@ -3,11 +3,21 @@
     --secondary-color: hsla(173, 36%, 55%, 1);
     --background-color: hsla(140, 100%, 99%, 1); 
 }
+
 *,body{
     font-family: Roboto;
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'), local('Pacifico-Regular'),
+      url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2)
+        format('woff2');
+    font-display: swap;
+  }
 header{
     display: flex;
     justify-content: center;
@@ -35,9 +45,7 @@ li{
 nav ul {
     display: flex;
     justify-content: space-evenly;
-    width: 100%;
-    
-    
+    width: 100%; 
 }
 
 nav ul li a{
@@ -47,9 +55,11 @@ nav ul li a{
 }
 main{
     margin: 50px;
+    width: 70%;
 }
 .titulo{
     border-bottom: solid 0.5px #4b4a4a;
+    width: 100%;
 }
 
 main div.card-container{
@@ -72,15 +82,16 @@ main div.card-container{
 
 .card h3{
     color: #fff;
+    margin-left: 15px;
 }
 /* card shadow*/
- .card{
+.card{
     margin-top: 20px;
     box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -webkit-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -moz-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
 } 
- .card:first-child {
+.card:first-child {
     width: 550px;
     height: 250px;
     /* background-color: blue; */
@@ -98,4 +109,13 @@ main div.card-container{
     color: #000;
     font-size: 16px;
     margin-left: 20px;
+}
+
+footer{
+    background-color: var(--primary-color);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
