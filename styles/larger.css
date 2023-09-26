@@ -52,65 +52,45 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-}
+    }
+
 main{
-    margin: 50px;
-    width: 70%;
-}
-.titulo{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+    margin-left: 100px;
+    margin-right: 100px;
+     
+    }
+main h2{
+    grid-column: 1/13;
+    grid-row: 1;
     border-bottom: solid 0.5px #4b4a4a;
-    width: 100%;
 }
-
-main div.card-container{
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
+.card-learning{
+    grid-column: 1/8;    
 }
-.card div{
-    background-color: var(--secondary-color);
-    text-align: center;
-    height: 40px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    justify-content: flex-start;
+.card-info{
+    grid-column: 9/13;
 }
-.titulo{
-    font-size: 30px;
-}
-
 .card h3{
-    color: #fff;
-    margin-left: 15px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    height: 50px;
+    line-height: 50px;
 }
-/* card shadow*/
 .card{
     margin-top: 20px;
     box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -webkit-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -moz-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
-} 
-.card:first-child {
-    width: 550px;
     height: 250px;
-    /* background-color: blue; */
-} 
-
-.card:nth-child(2) {
-    width: 300px;
-    height: 250px;
-    margin-left: 100px;
-}
-.card ul{
-    margin-top: 30px;    
-}
-.card ul li{
-    color: #000;
-    font-size: 16px;
-    margin-left: 20px;
+    margin-bottom: 50px;
 }
 
+.titulo{
+    font-size: 30px;
+}
 footer{
     background-color: var(--primary-color);
     height: 70px;
@@ -118,4 +98,10 @@ footer{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+section>ul{
+    margin-left: 20px;
+    display: grid;
+    grid-gap: 14px;
+    margin-top: 20px;
 }
