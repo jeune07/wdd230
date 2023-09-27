@@ -1,0 +1,41 @@
+
+/*font Familly*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,400&display=swap');
+
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Colors*/
+
+:root {
+    --primary-bg: #48CAE4;     
+    --secondary-bg: #CAF0F8;   
+    --menu-bg: #03045E;         
+    --button-cta: #FF6B6B;     
+    --primary-text: #333333;    
+    --secondary-text: #666666;  
+}
+main{
+    margin: 50px 100px 0 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 50px;
+    background-color: var(--secondary-bg);
+    justify-content: center;
+    width: 90%;
+    height: 400px;
+}
+section h3{
+    text-align: center;
+    color: var(--primary-text);
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+section p,ul{
+    padding: 50px;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
