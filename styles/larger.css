@@ -32,6 +32,9 @@ header figure img{
 header h1{
     color: #fff;
 }
+.mobile-menu{
+    display: none;
+}
 nav{
     background-color: var(--primary-color);
     height: 40px;
