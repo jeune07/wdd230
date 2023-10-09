@@ -32,30 +32,58 @@ header figure img{
 header h1{
     color: #fff;
 }
-.mobile-menu{
-    display: none;
+/* Menu */
+.logo{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgb(231, 49, 49);
 }
-nav{
+.container{
     background-color: var(--primary-color);
-    height: 40px;
     display: flex;
+    justify-content: space-between;
+    min-height: 70px;
     align-items: center;
+    padding: 0 24px;
+}
+.ul-container{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 60px;
+}
+a{
+    text-decoration:none ;
+    color: #fff;
 }
 li{
     list-style: none;
 }
+.nav-link{
+    transition: 0.2s ease;
+}
+.nav-link:hover{
+    color: rgba(73, 224, 73, 0.89);
+}
+.hamburger{
+    display: none;
+    
+}  
 
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%; 
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+   
+    -webkit-transition:all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out ;
+    background-color: #fff;
+
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    }
+
+/* Menu */
 
 main{
     margin-top: 20px;
@@ -107,4 +135,7 @@ section>ul{
     display: grid;
     grid-gap: 14px;
     margin-top: 20px;
+}
+footer p{
+    color: #fff;
 }

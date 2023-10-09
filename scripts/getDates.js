@@ -4,11 +4,22 @@ document.getElementById("year").innerText=year
 
 document.getElementById("lastModified").innerText=document.lastModified
 
-const menuBtn = document.querySelector(".hamburger");
-const menuNav = document.querySelector(".mobile-menu");
+const hamburger = document.querySelector(".hamburger");
+const ulContainer = document.querySelector(".ul-container");
+const container = document.querySelector(".container");
+const main =document.querySelector(".main")
 
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("is-active");
-    menuNav.classList.toggle("is-active");
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    ulContainer.classList.toggle("active");
+    container.classList.toggle("active")
+    main.classList.toggle("active")
+    
 
 });
+const removeActiveClass=document.querySelectorAll(".nav-link");
+removeActiveClass.forEach(a => a.addEventListener("click",()=>{
+    hamburger.classList.remove("active");
+    ulContainer.classList.remove("active");
+    container.classList.remove("active");
+}))
