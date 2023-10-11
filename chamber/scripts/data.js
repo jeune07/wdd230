@@ -1,8 +1,19 @@
-const responsiveMenu= document.querySelector(".hambuger-menu");
-const menuBaground= document.querySelector(".mobile")
-// const menuUl= document.querySelector("")
+const hamburger = document.querySelector(".hamburger");
+const ulContainer = document.querySelector(".ul-container");
+const container = document.querySelector(".container");
 
-responsiveMenu.addEventListener("click",()=>{
-    menuBaground.classList.toggle("is-active-mobile")
-    // menuUl.classList.toggle("")
-})
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    ulContainer.classList.toggle("active");
+    container.classList.toggle("active")
+    
+    
+
+});
+const removeActiveClass=document.querySelectorAll(".nav-link");
+removeActiveClass.forEach(a => a.addEventListener("click",()=>{
+    hamburger.classList.remove("active");
+    ulContainer.classList.remove("active");
+    container.classList.remove("active");
+}))
