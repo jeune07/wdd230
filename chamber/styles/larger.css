@@ -1,4 +1,4 @@
-* {
+User * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -55,6 +55,7 @@
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 50px;
 }
 .footer-container .footer-section-container .section-div-container h5 {
   color: #fff;
@@ -100,6 +101,91 @@ form label {
   height: 30px;
   border-radius: 8px;
   border: none;
+}
+
+.news-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 500px;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 100%;
+  gap: 50px;
+}
+.news-section .news-section-card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url(../images/dcc-exportation.webp);
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+.news-section .news-section-card-1 .title {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 800;
+  padding-left: 20px;
+}
+.news-section .news-section-card-1 .description {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 800;
+  padding-left: 20px;
+}
+.news-section .news-section-card-1 .button-1-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.news-section .news-section-card-1 .button-1-container .button-1 {
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0c3471;
+  color: #fff;
+  margin-right: 23px;
+}
+.news-section .news-section-card-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("../images/green-grocery2.webp");
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+}
+.news-section .news-section-card-2 .title {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  padding-left: 20px;
+}
+.news-section .news-section-card-2 .description {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 800;
+  padding-left: 20px;
+}
+.news-section .news-section-card-2 .button-1-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.news-section .news-section-card-2 .button-1-container .button-1 {
+  width: 80px;
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  background-color: #0c3471;
+  color: #fff;
+  margin-right: 23px;
 }
 
 @media screen and (max-width: 520px) {
@@ -174,7 +260,92 @@ form label {
   .hero-section-card .hero-sectio-button {
     margin-top: 50px;
   }
-  .footer-container {
+  .news-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+    gap: 40px;
+    margin-bottom: 600px;
+  }
+  .news-section .news-section-card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url(../images/dcc-exportation.webp);
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+  }
+  .news-section .news-section-card-1 .title {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 800;
+    padding-left: 20px;
+  }
+  .news-section .news-section-card-1 .description {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    padding-left: 20px;
+  }
+  .news-section .news-section-card-1 .button-1-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .news-section .news-section-card-1 .button-1-container .button-1 {
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0c3471;
+    color: #fff;
+    margin-right: 23px;
+  }
+  .news-section .news-section-card-1 .news-section-card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-image: url("../images/green-grocery2.webp");
+    background-origin: content-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .news-section .news-section-card-1 .news-section-card-2 .title {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+    padding-left: 20px;
+  }
+  .news-section .news-section-card-1 .news-section-card-2 .description {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 800;
+    padding-left: 20px;
+  }
+  .news-section .news-section-card-1 .news-section-card-2 .button-1-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .news-section .news-section-card-1 .news-section-card-2 .button-1-container .button-1 {
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    border: none;
+    background-color: #0c3471;
+    color: #fff;
+    margin-right: 23px;
+  }
+  .news-section .footer-container {
     position: fixed;
     bottom: 0;
     display: flex;
@@ -182,13 +353,13 @@ form label {
     background-color: #120740;
     height: 167px;
   }
-  .footer-container .footer-section-container {
+  .news-section .footer-container .footer-section-container {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: -49px;
     margin-left: 51px;
   }
-  .footer-container .footer-section-container .item1 {
+  .news-section .footer-container .footer-section-container .item1 {
     grid-column-start: span 3;
   }
 }/*# sourceMappingURL=larger.css.map */
