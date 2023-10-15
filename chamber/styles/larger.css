@@ -107,7 +107,7 @@ form label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 500px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
   height: 300px;
   width: 100%;
@@ -186,6 +186,103 @@ form label {
   background-color: #0c3471;
   color: #fff;
   margin-right: 23px;
+}
+
+.mySlides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mySlides img {
+  vertical-align: middle;
+  height: 250px;
+  width: 100%;
+}
+
+.containerSlide {
+  width: 98%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-self: center;
+  align-items: center;
+}
+
+.mySlides {
+  width: 90%;
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  position: relative;
+  cursor: pointer;
+  height: 0px;
+  width: 0px;
+  padding-top: 10px;
+  margin-top: 30px;
+  text-align: center;
+  color: rgb(173, 23, 23);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(126, 126, 126, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.slideCOmtainert {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 100px;
 }
 
 @media screen and (max-width: 520px) {
@@ -267,7 +364,7 @@ form label {
     flex-wrap: wrap;
     height: 300px;
     gap: 40px;
-    margin-bottom: 600px;
+    margin-bottom: 300px;
   }
   .news-section .news-section-card-1 {
     display: flex;

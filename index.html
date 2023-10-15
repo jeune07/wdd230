@@ -13,16 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
-</head>
-    <link rel="stylesheet" href="./styles/larger.css">
     <link rel="stylesheet" href="./styles/base.css">
-</head>
+        <link rel="stylesheet" href="./styles/larger.css">
+    </head>
 <body> 
     
     <header>
         <figure>
-            <picture>
-                <img src="./images/jeune-profile.jpg" alt="Profile image of Jeune Winsley">               
+           
+            <picture>                
+                <img src="./images/jeune-profile.webp" alt="Profile image of Jeune Winsley">               
             </picture>             
         </figure>
         <h1>Jeune Winsley</h1>
@@ -31,7 +31,7 @@
         <a href="" class="logo">WJ</a>
             <ul class="ul-container">
                 <li class="li-container"><a href="#" class="nav-link">Home</a></li>
-                <li class="li-container"><a href="#"class="nav-link">Chamber</a></li>
+                <li class="li-container"><a href="#" class="nav-link">Chamber</a></li>
                 <li class="li-container"><a href="#" class="nav-link">Site Plan</a></li>
                 <li class="li-container"><a href="#" class="nav-link">Form</a></li>
             </ul>
@@ -42,10 +42,15 @@
             </div>
     </nav>
     
-    
     <main class="main">
+        <div class="hero">
+            <picture>
+                <!-- <source srcset="./images/newport_beach_california_temple.webp" sizes="(max-width: 400px) 400px, 100vw" />
+                <source srcset="./images/newport_beach_california_temple.webp" sizes="(max-width: 960px) 960px, 100vw" /> -->
+                <img src="./images/newport_beach_california_temple.webp" alt="Newport Beach California Temple" />
+            </picture>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
-                        
             <section class="card-learning card">   
             <h3>Learning Activities</h3>   
             <ul>
@@ -55,12 +60,16 @@
                 <li>Week 04</li>
                 <li>Week 05</li>
             </ul>
-            </section>   
-
+            </section> 
             <section class="card-info card">
                 <h3>Information</h3>
+                <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
             </section>    
+          
     </main>
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d107134.75304383121!2d-60.77904156279023!3d-32.95203820056412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539335d7d75b%3A0xec4086e90258a557!2sRosario%2C%20Santa%20Fe%20Province!5e0!3m2!1sen!2sar!4v1697334709496!5m2!1sen!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Rosario, Santa Fe Province Google Map"></iframe>
+    </div>
     <footer>
         <p>&copy;<span id="year"></span>Jeune Winsley Argentina</p>
         <p>Last modification :<span id="lastModified"></span></p>
