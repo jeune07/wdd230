@@ -51,17 +51,23 @@ User * {
 }
 .footer-container .footer-section-container {
   padding-top: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+.section-div-container{
   display: flex;
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 .footer-container .footer-section-container .section-div-container h5 {
   color: #fff;
 }
 .footer-container .footer-section-container .section-div-container .section-div-ul-container {
-  margin-top: 10px;
+  margin-top: -17px;
 }
 .footer-container .footer-section-container .section-div-container .section-div-ul-container a, .footer-container .footer-section-container .section-div-container .section-div-ul-container ul, .footer-container .footer-section-container .section-div-container .section-div-ul-container li {
   color: #fff;
@@ -284,8 +290,19 @@ form label {
   height: 300px;
   margin-bottom: 100px;
 }
+.discorver-images{
+  width: 100%;
+  height: 100%;
+}
+.discorver-images img{
+  margin: 10px;
+}
 
 @media screen and (max-width: 520px) {
+  .discorver-images img{
+    margin: 0;
+  }
+
   .container.active {
     background-color: var(--primary-color);
     display: flex;
@@ -442,21 +459,56 @@ form label {
     color: #fff;
     margin-right: 23px;
   }
-  .news-section .footer-container {
+  /* .news-section .footer-container {
     position: fixed;
     bottom: 0;
     display: flex;
     width: 100%;
     background-color: #120740;
     height: 167px;
-  }
-  .news-section .footer-container .footer-section-container {
+  } */
+  /* .news-section .footer-container .footer-section-container {
     display: grid;
     grid-template-columns: auto auto auto;
     margin-top: -49px;
     margin-left: 51px;
-  }
+  } */
   .news-section .footer-container .footer-section-container .item1 {
     grid-column-start: span 3;
   }
-}/*# sourceMappingURL=larger.css.map */
+  .section-div-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 132px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+    .footer-container {
+      position: fixed;
+      bottom: 0;
+      display: flex;
+      width: 100%;
+      background-color: #120740;
+      height: 145px;
+      align-items: center;
+  
+  }
+    
+   
+  .footer-container .footer-section-container {
+    padding-top: 0px;
+    padding-bottom: 17px;
+    margin-right: 30px;
+    margin-left: 13px;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+   justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+
+
+}
