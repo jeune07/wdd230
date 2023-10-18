@@ -262,6 +262,9 @@ form label {
   position: absolute;
   top: 0;
 }
+.mySlides img:before{
+  content: ">";
+}
 
 .caption-container {
   text-align: center;

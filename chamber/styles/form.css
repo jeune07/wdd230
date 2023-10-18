@@ -1,0 +1,107 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(28, 156, 216);
+    --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    --form-width: 400px;
+    --form-height: 500px;
+    --input-width: 300px;
+    --input-height: 40px;
+    --border-radius: 8px;
+  } 
+
+
+main{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.conatainer-form {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: var(--form-height);
+    height: var(--form-height);
+    border: solid 1px #106bb6;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+    align-content: center;
+}
+.conatainer-form div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div input{
+    width: var(--form-width);
+    height: var(--input-height);
+    border-radius: 8px;
+    border-color: rgb(28, 156, 216);
+}
+.conatainer-form div label{
+    width: var(--form-width);
+    display: inline-block;
+}
+button.page-rating {
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    color: #fff;
+    background-color: #38efff;
+}
+
+
+@media screen and (max-width: 520px) {
+    main {
+        width: 350px;
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        justify-items: center; /* Note: 'justify-items' is not a valid property. */
+        align-items: center;
+    }
+
+    .container-form {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        height: var(--form-height);
+        border: solid 1px #106bb6;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        flex-wrap: wrap;
+        align-content: center;
+    }
+   
+    .container-form div {
+        width: 50%;
+        height: 14%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    div input {
+        width: 70%;
+        border-radius: 8px;
+        border-color: rgb(28, 156, 216);
+    }
+
+    .conatainer-form div label {
+        width: 70%;
+        display: inline-block;
+    }
+}

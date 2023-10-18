@@ -45,3 +45,25 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 //   dots[slideIndex-1].className += " active";
 }
+
+
+//form script
+
+function checkPasswordMatch() {
+  const password = document.getElementById('password');
+  const confirmPassword = document.getElementById('confirm-password');
+  const message = document.getElementById('password-match-message');
+
+  if (password.value !== confirmPassword.value) {
+    message.textContent = 'Passwords do not match.';
+    confirmPassword.focus();
+  } else {
+    message.textContent = '';
+  }
+}
+
+function updateRangeValue() {
+  const range = document.getElementById('page-rating');
+  const rangeValue = document.getElementById('range-value');
+  rangeValue.textContent = range.value;
+}

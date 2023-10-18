@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/form.css">
+    <title>form</title>
+</head>
+<body>
+    <main>
+       
+        <form class="conatainer-form" action="post" method="GET">
+            <h1>Resgiter</h1>
+            <div class="username-container">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+          
+            <div class="username-password">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required pattern="^[A-Za-z0-9]{3,16}$">
+            </div>
+          
+            <div class="username-confirm-password">
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" pattern="^[A-Za-z0-9]{3,16}$" required oninput="checkPasswordMatch()">
+              <p id="password-match-message"></p>
+            </div>
+          
+            <div class="email">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                     title="Please enter a valid email address">
+            </div>
+          
+            <div class="page-rating">
+              <label for="page-rating">Page Rating:</label>
+              <input type="range" id="page-rating" name="page-rating" min="1" max="10"  oninput="updateRangeValue()">
+              <span id="range-value">1</span>
+            </div>
+          
+            <button type="submit" class="page-rating">Submit</button>
+          </form>
+          
+          <script src="./scripts/data.js"></script>
+    </main>
+</body>
+</html>
