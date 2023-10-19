@@ -33,3 +33,24 @@ if (numVisits !== 0) {
 }
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
+
+//form script
+
+function checkPasswordMatch() {
+    const password = document.getElementById('password');
+    const confirmPassword = document.getElementById('confirm-password');
+    const message = document.getElementById('password-match-message');
+  
+    if (password.value !== confirmPassword.value) {
+      message.textContent = 'Passwords do not match.';
+      confirmPassword.focus();
+    } else {
+      message.textContent = '';
+    }
+  }
+  
+  function updateRangeValue() {
+    const range = document.getElementById('page-rating');
+    const rangeValue = document.getElementById('range-value');
+    rangeValue.textContent = range.value;
+  }

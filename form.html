@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>[Jeune Winsley] - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="Welcome to WDD 230 - Your Ultimate Web Development Resource by Jeune Winsley. Explore the world of web development and enhance your skills with expert guidance and valuable insights.">
+    <meta property="og:url" content="https://jeune07.github.io/wdd230/"> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:title" content="[Jeune Winsley] - WDD 230 - Web Frontend Development"> 
+    <meta property="og:description" content="Welcome to WDD 230 - Your Ultimate Web Development Resource by Jeune Winsley. Explore the world of web development and enhance your skills with expert guidance and valuable insights.">
+    <meta property="og:image" content="./images/jeune-profile.jpg"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/larger.css">
+        <link rel="stylesheet" href="./styles/form.css">
+    </head>
+<body> 
+    
+    <header>
+        <figure>
+           
+            <picture>                
+                <img src="./images/jeune-profile.webp" alt="Profile image of Jeune Winsley">               
+            </picture>             
+        </figure>
+        <h1>Jeune Winsley</h1>
+    </header>
+    <nav class="container">
+        <a href="" class="logo">WJ</a>
+            <ul class="ul-container">
+                <li class="li-container"><a href="#" class="nav-link">Home</a></li>
+                <li class="li-container"><a href="#" class="nav-link">Chamber</a></li>
+                <li class="li-container"><a href="#" class="nav-link">Site Plan</a></li>
+                <li class="li-container"><a href="#" class="nav-link">Form</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+    </nav>       
+</header>
+    <main class="main-form">
+       
+        <form class="conatainer-form" action="post" method="GET">
+            <h1>Resgiter</h1>
+            <div class="username-container">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+          
+            <div class="username-password">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required pattern="^[A-Za-z0-9]{3,16}$">
+            </div>
+          
+            <div class="username-confirm-password">
+              <label for="confirm-password">Confirm Password:</label>
+              <input type="password" id="confirm-password" name="confirm-password" pattern="^[A-Za-z0-9]{3,16}$" required oninput="checkPasswordMatch()">
+              <p id="password-match-message"></p>
+            </div>
+          
+            <div class="email">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required pattern=".+@byui\.edu$"  title="Please enter a valid email address">
+            </div>
+          
+            <div class="page-rating">
+              <label for="page-rating">Page Rating:</label>
+              <input type="range" id="page-rating" name="page-rating" min="1" max="10"  oninput="updateRangeValue()">
+              <span id="range-value">1</span>
+            </div>
+          
+            <button type="submit" class="page-rating">Submit</button>
+          </form>
+          
+          
+    </main>
+     <footer>
+        <p>&copy;<span id="year"></span>Jeune Winsley Argentina</p>
+        <p>Last modification :<span id="lastModified"></span></p>
+        
+    </footer>
+    <script src="./scripts/getDates.js"></script>
+</body>
+</html>
