@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <meta name="description" content="Explore the Dessaline Chamber for the latest updates, resources, and valuable insights on business and economic activities. Your go-to source for comprehensive information.">
+        <meta property="og:url" content="https://jeune07.github.io/wdd230/chamber"> 
+        <meta property="og:type" content="website"> 
+        <meta property="og:title" content="[Jeune Winsley] - Dessaline Chamber"> 
+        <meta property="og:description" content="Explore the Dessaline Chamber for the latest updates, resources, and valuable insights on business and economic activities. Your go-to source for comprehensive information.">
+        <meta property="og:image" content="./images/dcc-logo.png"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,300&display=swap" rel="stylesheet">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./styles/form.css">
-    <title>form</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <title>[Jeune Winsley] Dessaline Chamber Register Form</title>
 </head>
 <body>
-    <main>
+  <header>
+    <nav class="container">
+        <img class="logo" src="./images/dcc-logo.png" alt="Dessalines chamber of commerce" width="120" height="50">
+        <ul class="ul-container">
+            <li class="li-container"><a href="#" class="nav-link">About DCC</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Economic Developement</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Market</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Events</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Education</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Contact us</a></li>
+            <li class="li-container"><a href="#" class="nav-link">Patners</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        </nav>        
+</header>
+    <main class="main-form">
        
         <form class="conatainer-form" action="post" method="GET">
             <h1>Resgiter</h1>
@@ -29,8 +61,7 @@
           
             <div class="email">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
-                     title="Please enter a valid email address">
+              <input type="email" id="email" name="email" required pattern=".+@byui\.edu$"  title="Please enter a valid email address">
             </div>
           
             <div class="page-rating">
@@ -42,7 +73,42 @@
             <button type="submit" class="page-rating">Submit</button>
           </form>
           
-          <script src="./scripts/data.js"></script>
+          
     </main>
+    <div class="space-form"></div>
+    <footer class="footer-container">
+        <div class="footer-section-container">
+            <div class="section-div-container item1">
+                <form class="form-footer" >
+                    <label for="email">Suscribe to our news letter</label>
+                    <input type="email" name="email" id="email" class="form-footer-input">
+                    <button type="submit">Suscribe</button>
+                </form>
+            </div>
+            <div class="section-div-container">
+                <h5>About Us</h5>
+                <ul class="section-div-ul-container">
+                    <li>Mission</li>
+                    <li>Vision</li>
+                    <li>Values</li>
+                    <li>Boards</li>
+                    <li>Council</li>
+                </ul>                
+            </div>
+            <div class="section-div-container">
+                  <h5>Areas</h5>
+                <ul class="section-div-ul-container">
+                  
+                    <li>Domestic Trade</li>
+                    <li>Labor Affairs</li>
+                    <li>Economy</li>
+                    <li>Foreign Trade</li>
+                    <li>International </li>
+                </ul>                
+            </div>
+        </div>
+        
+    </footer>
+    <script src="./scripts/data.js"></script>
 </body>
 </html>

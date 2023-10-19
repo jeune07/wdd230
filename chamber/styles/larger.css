@@ -63,9 +63,16 @@ User * {
     align-items: center;
     flex-wrap: wrap;
 }
-.footer-container .footer-section-container .section-div-container h5 {
+ .footer-container .footer-section-container .section-div-container h5 {
   color: #fff;
-}
+  padding-bottom: 20px;
+} 
+
+/* .container .section-div-container h5 {
+  color: #fff;
+  padding-bottom: 20px;
+} */
+
 .footer-container .footer-section-container .section-div-container .section-div-ul-container {
   margin-top: -17px;
 }
@@ -77,7 +84,7 @@ User * {
 }
 
 form label {
-  color: #fff;
+  color: #3b22aa;
 }
 
 .hero-section {
@@ -479,14 +486,28 @@ form label {
   .news-section .footer-container .footer-section-container .item1 {
     grid-column-start: span 3;
   }
-  .section-div-container{
+  /* .section-div-container{
     display: flex;
     flex-wrap: wrap;
     height: 132px;
     justify-content: center;
     align-items: center;
-  }
+  } */
   
+  .section-div-container {
+    display: flex;
+    height: 153px;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.form-footer-input{
+  width: 96%;
+  border-radius: 8px;
+  border-color: rgb(28, 156, 216);
+  height: 30px;
+}
     .footer-container {
       position: fixed;
       bottom: 0;

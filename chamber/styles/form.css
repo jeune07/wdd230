@@ -15,13 +15,18 @@
   } 
 
 
-main{
+  .main-form{
     width: 100%;
     height: 700px;
     display: flex;
     justify-content: center;
     justify-items: center;
-    align-items: center;
+    align-items: center;    
+}
+
+.space-form{
+    height: 100px;
+    width: 100%;
 }
 .conatainer-form {
     display: flex;
@@ -63,7 +68,7 @@ button.page-rating {
 
 
 @media screen and (max-width: 520px) {
-    main {
+    .main-form {
         width: 350px;
         height: 700px;
         display: flex;
