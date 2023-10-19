@@ -57,7 +57,7 @@
 
 .space{
     width: 100%;
-    height: 600px;
+    height: 50px;
 }
 
 
@@ -220,13 +220,10 @@
        
     }
     
-    .space{
-        margin-top: 400px;
-        margin-bottom: 400px;
-        width: 100%;
-        height: 672px;
-        padding-top: 200px;
-    }
+    .space-join{
+      height: 50px;
+      width: 100%;
+    
 
 
 

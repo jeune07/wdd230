@@ -46,4 +46,6 @@ function showSlides(n) {
 //   dots[slideIndex-1].className += " active";
 }
 
+//get the time form the form
 
+document.getElementById("timestamp").value = new Date().toLocaleString();

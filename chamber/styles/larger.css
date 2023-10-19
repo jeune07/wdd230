@@ -1,10 +1,20 @@
-User * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
+
+:root {
+  --primary-color: rgb(28, 156, 216);
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  --form-width: 400px;
+  --form-height: 500px;
+  --input-width: 300px;
+  --input-height: 40px;
+  --border-radius: 8px;
+} 
 /* Menu */
 .container {
   background-color: var(--primary-color);
@@ -307,6 +317,75 @@ form label {
 .discorver-images img{
   margin: 10px;
 }
+/* start form desktop*/
+.main-form{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;    
+}
+
+.space-join{
+  height: 200px;
+  width: 100%;
+}
+.conatainer-form {
+  display: flex;
+  flex-direction: column;
+  width: var(--form-height);
+  height: 750px;
+  border: solid 1px #106bb6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.conatainer-form div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div input{
+  width: var(--form-width);
+  height: var(--input-height);
+  border-radius: 8px;
+  border-color: rgb(28, 156, 216);
+}
+.conatainer-form div label{
+  width: var(--form-width);
+  display: inline-block;
+}
+.join-button{
+  width: 150px;
+  height: 50px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #090b81;
+}
+#description{
+  width: 414px;
+  max-width: 70%;
+  height: 130px;
+  max-height: 106px;
+}
+/*fin form desktop*/
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 520px) {
   .discorver-images img{
@@ -534,5 +613,47 @@ form label {
     align-content: center;
 }
 
+
+.main-form {
+  width: 350px;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  justify-items: center; /* Note: 'justify-items' is not a valid property. */
+  align-items: center;
+}
+
+.container-form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: var(--form-height);
+  border: solid 1px #106bb6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.container-form div {
+  width: 50%;
+  height: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div input {
+  width: 70%;
+  border-radius: 8px;
+  border-color: rgb(28, 156, 216);
+}
+
+.conatainer-form div label {
+  width: 70%;
+  display: inline-block;
+}
 
 }
