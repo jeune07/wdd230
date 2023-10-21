@@ -94,9 +94,11 @@
 }
 
 form label {
+  color: #0f27af;
+}
+#Suscribe{
   color: #ffffff;
 }
-
 .hero-section {
   display: flex;
   justify-content: center;
