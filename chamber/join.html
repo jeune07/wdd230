@@ -38,7 +38,7 @@
             </div>
             </nav>        
     </header>
-   
+
         <div class="space-join"></div>
         <main class="main-form">       
             <form class="conatainer-form" action="thankyou.html" method="get">
@@ -49,31 +49,31 @@
                 </div>
 
                 <div class="username-container">
-                    <label for="last_name">Applicant's Last Name:</label>
+                    <label for="last_name" aria-label="Applicant's Last Nam" >Applicant's Last Name: </label>
                     <input type="text" id="last_name" name="last_name" required>
                   </div>
                   <div class="username-container">
-                    <label for="position">Applicant's Title/Position:</label>
+                    <label for="position" aria-label="Applicant's Title/Position:">Applicant's Title/Position:</label>
                     <input type="text" id="position" name="position" pattern="[A-Za-z\s\-]{7,}">
                   </div>
 
                   <div class="form-element username-container">
-                    <label for="e-mail">Email Address:</label>
+                    <label for="e-mail" aria-label="Email Address:">Email Address:</label>
                     <input type="email" id="e-mail" name="e-mail" required placeholder="example@example.com">
                 </div>
                 
                 <div class="form-element">
-                    <label for="phone">Mobile Phone Number:</label>
+                    <label for="phone" aria-label="Mobile Phone Number:">Mobile Phone Number:</label>
                     <input type="tel" id="phone" name="phone" required>
                 </div>
         
                 <div class="form-element">
-                    <label for="organization">Business/Organization Name:</label>
+                    <label for="organization" aria-label="Business/Organization Name:">Business/Organization Name:</label>
                     <input type="text" id="organization" name="organization" required>
                 </div>
         
                 <div class="form-element">
-                    <label for="membership_level">Membership Level:</label>
+                    <label for="membership_level" aria-label="Membership Level">Membership Level:</label>
                     <select id="membership_level" name="membership_level" class="username-container">
                         <option value="NP">NP Membership (Free)</option>
                         <option value="Bronze">Bronze Membership ($100)</option>
@@ -83,40 +83,55 @@
                 </div>
         
                 <div class="form-element username-container">
-                    <label for="description">Business/Organization Description:</label>
+                    <label for="description" aria-label="Business/Organization Description">Business/Organization Description:</label>
                     <textarea id="description" name="description"></textarea>
                 </div>
                 <div style="display: none;"><input type="hidden" id="timestamp" name="timestamp" value=""></div>
-        
-                <!-- <input type="hidden" id="timestamp" name="timestamp" value="" readonly> -->
-        
-                <!-- <div class="form-element">
-                    <input type="submit" value="Submit Application">
-                </div> -->
-                <!-- <div class="username-password">
-                  <label for="password">Password:</label>
-                  <input type="password" id="password" name="password" required pattern="^[A-Za-z0-9]{3,16}$">
-                </div>
-              
-                <div class="username-confirm-password">
-                  <label for="confirm-password">Confirm Password:</label>
-                  <input type="password" id="confirm-password" name="confirm-password" pattern="^[A-Za-z0-9]{3,16}$" required oninput="checkPasswordMatch()">
-                  <p id="password-match-message"></p>
-                </div>
-              
-                <div class="email">
-                  <label for="email">Email:</label>
-                  <input type="email" id="email" name="email" required pattern=".+@byui\.edu$"  title="Please enter a valid email address">
-                </div>
-              
-                <div class="page-rating">
-                  <label for="page-rating">Page Rating:</label>
-                  <input type="range" id="page-rating" name="page-rating" min="1" max="10"  oninput="updateRangeValue()">
-                  <span id="range-value">1</span>
-                </div> -->
-              
                 <button type="submit" class="join-button">Join</button>
               </form>  
+
+              <div class="menbership-informaction">
+                <h4>Membership Levels and Benefits</h4>
+                <p>In our commitment to providing you with the best value, we offer multiple membership levels, each with increasing benefits. Please take a moment to review your options and choose the one that best suits your needs.</p>
+                <div>
+                    <h4>Bronze Membership</h4>
+                    <ul>
+                        <li>benefits :</li>                              
+                            <li>Access to special events</li>
+                            <li>Discounted rates on training sessions</li>
+                            <li>Quarterly newsletter subscription</li>
+                            
+                    </ul>
+                    <h4>Silver Membership</h4>
+                    <ul>
+                        <li>benefits :</li>                              
+                            <li>All Bronze Membership benefits</li>
+                            <li>Spotlight position on the home page for one event per year</li>
+                            <li>10% off event ticket prices</li>
+                            
+                    </ul>
+                    <h4>Gold Membership</h4>
+                    <ul>
+                        <li>benefits :</li>                              
+                            <li>All Silver Membership benefits</li>
+                            <li>Priority access to special events</li>
+                            <li>Inclusion in our featured member spotlight</li>
+                            <li>20% off event ticket prices</li>
+                            
+                    </ul>
+                    <h4>Platinum Membership</h4>
+                    <ul>
+                        <li>benefits :</li>                             
+                            <li>All Gold Membership benefits</li>
+                            <li>Exclusive access to member-only training sessions</li>
+                            <li>Premium advertising space on the home page</li>
+                            <li>30% off event ticket prices</li>
+                            
+                    </ul>
+                </div>
+               
+    
+            </div>
        
     </main>
     <div class="space-join"></div>
@@ -151,6 +166,7 @@
                 </ul>                
             </div>
         </div>
+       
         
     </footer>
     <script src="./scripts/data.js"></script>        

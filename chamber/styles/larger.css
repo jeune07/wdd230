@@ -94,7 +94,7 @@
 }
 
 form label {
-  color: #3b22aa;
+  color: #ffffff;
 }
 
 .hero-section {
@@ -318,17 +318,18 @@ form label {
   margin: 10px;
 }
 /* start form desktop*/
-.main-form{
+.main-form {
   width: 100%;
   height: 700px;
   display: flex;
   justify-content: center;
   justify-items: center;
-  align-items: center;    
+  align-items: flex-start;
+  gap: 50px;
 }
 
 .space-join{
-  height: 200px;
+  height: 400px;
   width: 100%;
 }
 .conatainer-form {
@@ -374,20 +375,48 @@ div input{
   height: 130px;
   max-height: 106px;
 }
+
+.menbership-informaction{
+  width: 350px;
+}
 /*fin form desktop*/
 
+/* thank you page*/
 
+.thanks-container{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 
-
-
-
-
-
-
-
-
+/* fin thank you page*/
 @media screen and (max-width: 520px) {
+  /* thank you page*/
+
+.thanks-container{
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.conatainer-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 750px;
+  border: solid 1px #106bb6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+/* fin thank you page*/
+
   .discorver-images img{
     margin: 0;
   }
@@ -548,30 +577,10 @@ div input{
     color: #fff;
     margin-right: 23px;
   }
-  /* .news-section .footer-container {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    background-color: #120740;
-    height: 167px;
-  } */
-  /* .news-section .footer-container .footer-section-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin-top: -49px;
-    margin-left: 51px;
-  } */
+ 
   .news-section .footer-container .footer-section-container .item1 {
     grid-column-start: span 3;
   }
-  /* .section-div-container{
-    display: flex;
-    flex-wrap: wrap;
-    height: 132px;
-    justify-content: center;
-    align-items: center;
-  } */
   
   .section-div-container {
     display: flex;
@@ -615,13 +624,18 @@ div input{
 
 
 .main-form {
-  width: 350px;
+  padding: 30px;
+  width: 99%;
   height: 700px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center; /* Note: 'justify-items' is not a valid property. */
+  justify-items: center;
   align-items: center;
+  align-content: stretch;
 }
+
+
 
 .container-form {
   display: flex;
