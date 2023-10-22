@@ -56,6 +56,10 @@ a{
     text-decoration:none ;
     color: #fff;
 }
+.ulweek a{
+    text-decoration:none ;
+    color: #000;
+}
 li{
     list-style: none;
 }
@@ -125,7 +129,7 @@ main h2{
     box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -webkit-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
     -moz-box-shadow: 1px 0px 8px 9px rgba(220,210,210,1);
-    height: 250px;
+    height: 300px;
     margin-bottom: 50px;
 }
 

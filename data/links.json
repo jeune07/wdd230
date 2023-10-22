@@ -4,15 +4,15 @@
         "week": "Week 01",
         "links": [
           {
-            "url": "week01/learning-activities.html",
+            "url": "https://byui-cse.github.io/wdd230-ww-course/week01/",
             "title": "Learning Activities"
           },
           {
-            "url": "week01/team-activity.html",
+            "url": "https://jeune07.github.io/wdd230/",
             "title": "Team Activity"
           },
           {
-            "url": "week01/project-milestone.html",
+            "url": "https://jeune07.github.io/wdd230/week01/chamber-site-plan.html",
             "title": "Project Milestone"
           }
         ]
@@ -21,15 +21,15 @@
         "week": "Week 02",
         "links": [
           {
-            "url": "week02/learning-activities.html",
+            "url": "https://byui-cse.github.io/wdd230-ww-course/week02/",
             "title": "Learning Activities"
           },
           {
-            "url": "week02/team-activity.html",
+            "url": "https://jeune07.github.io/wdd230/",
             "title": "Team Activity"
           },
           {
-            "url": "week02/project-milestone.html",
+            "url": "https://jeune07.github.io/wdd230/chamber/",
             "title": "Project Milestone"
           }
         ]
@@ -38,15 +38,15 @@
         "week": "Week 03",
         "links": [
           {
-            "url": "week03/learning-activities.html",
+            "url": "https://byui-cse.github.io/wdd230-ww-course/week03/",
             "title": "Learning Activities"
           },
           {
-            "url": "week03/team-activity.html",
+            "url": "https://jeune07.github.io/wdd230/",
             "title": "Team Activity"
           },
           {
-            "url": "week03/project-milestone.html",
+            "url": "https://jeune07.github.io/wdd230/chamber/discover",
             "title": "Project Milestone"
           }
         ]
@@ -55,15 +55,15 @@
         "week": "Week 04",
         "links": [
           {
-            "url": "week04/learning-activities.html",
+            "url": "https://byui-cse.github.io/wdd230-ww-course/week04/",
             "title": "Learning Activities"
           },
           {
-            "url": "week04/team-activity.html",
+            "url": "https://jeune07.github.io/wdd230/form",
             "title": "Team Activity"
           },
           {
-            "url": "week04/project-milestone.html",
+            "url": "https://jeune07.github.io/wdd230/chamber/join",
             "title": "Project Milestone"
           }
         ]
