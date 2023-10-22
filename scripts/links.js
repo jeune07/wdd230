@@ -132,5 +132,14 @@ jsonData.weeks.forEach((week) => {
 });
 
 }
-
 getdta(linksURL)
+
+//open weather
+const climaKey="4647c80e8d07fd4"
+
+climaurl ="https://api.openweathermap.org/data/3.0/onecall/timemachine?lat={lat}&lon={lon}&dt={time}&appid={climaKey}"
+const handlerClima =async (climaurl)=>{
+
+    const response = await fetch(climaurl)
+
+}

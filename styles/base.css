@@ -3,7 +3,17 @@
     --secondary-color: hsla(173, 36%, 55%, 1);
     --background-color: hsla(140, 100%, 99%, 1);
   }
-  
+  .weather-container{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+  .weather-logo{
+    width: 100px;
+    height: 100px;
+  }
   /* Media Query for Screens <= 810px */
   @media screen and (max-width: 810px) {
     /* Navigation Styles */
