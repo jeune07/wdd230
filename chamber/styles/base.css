@@ -225,20 +225,13 @@
       width: 100%;
     }
 
+  }
 
-/*directory*/
 
-.card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-}
+  /*directory*/
 
-.card img {
-  max-width: 100%;
-  height: auto;
-}
+  
+
 
 /* .card a {
   text-decoration: none;

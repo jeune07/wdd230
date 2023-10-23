@@ -1,5 +1,6 @@
 const fetchingData = async () => {
     const cardContainer = document.getElementById("card-container");
+    const cardClass=document.querySelector("card-container-class")
   
     try {
       const response = await fetch("https://jeune07.github.io/wdd230/chamber/data/members.json");
@@ -51,6 +52,24 @@ const fetchingData = async () => {
       console.error("Error:", error);
     }
   }
-  
   fetchingData();
+
+  const removeAndRemoveClass = () => {
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
+      card.classList.remove("card");
+      card.classList.add("cardChangeView");
+    });
+  }
+  
+  const removeCardChangeView = () => {
+    const cards = document.querySelectorAll(".cardChangeView");
+    cards.forEach((card) => {
+      card.classList.remove("cardChangeView");
+      card.classList.add("card");
+    });
+  }
+  
+  document.getElementById("myBtn-grid").addEventListener("click", removeAndRemoveClass);
+  document.getElementById("myBtn-button").addEventListener("click", removeCardChangeView);
   
