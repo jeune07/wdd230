@@ -5,7 +5,7 @@
         "address": "123 Main St, City, State, Zip",
         "phone": "123-456-7890",
         "website": "http://www.company1.com",
-        "image": "images/copmagny-1.jpg",
+        "image": "images/company-1.jpg",  // Corrected image URL
         "membershipLevel": "Gold",
         "otherInfo": "Additional information about Company 1"
       },
@@ -14,7 +14,7 @@
         "address": "456 Elm St, City, State, Zip",
         "phone": "987-654-3210",
         "website": "http://www.company2.com",
-        "image": "images/copmagny-2.jpg",
+        "image": "images/company-2.jpg",
         "membershipLevel": "Silver",
         "otherInfo": "Additional information about Company 2"
       },
@@ -23,7 +23,7 @@
         "address": "789 Oak St, City, State, Zip",
         "phone": "555-123-4567",
         "website": "http://www.company3.com",
-        "image": "images/copmagny-3.jpg",
+        "image": "images/company-3.jpg",
         "membershipLevel": "Bronze",
         "otherInfo": "Additional information about Company 3"
       },
@@ -32,7 +32,7 @@
         "address": "101 Pine St, City, State, Zip",
         "phone": "333-888-9999",
         "website": "http://www.company4.com",
-        "image": "images/copmagny-4.jpg",
+        "image": "images/company-4.jpg",
         "membershipLevel": "Platinum",
         "otherInfo": "Additional information about Company 4"
       },
@@ -41,7 +41,7 @@
         "address": "555 Cedar St, City, State, Zip",
         "phone": "222-444-6666",
         "website": "http://www.company5.com",
-        "image": "images/copmagny-8.jpg",
+        "image": "images/company-5.jpg",  // Corrected image URL
         "membershipLevel": "Gold",
         "otherInfo": "Additional information about Company 5"
       },
@@ -50,7 +50,7 @@
         "address": "777 Birch St, City, State, Zip",
         "phone": "888-777-1111",
         "website": "http://www.company6.com",
-        "image":"images/copmagny-7.jpg",
+        "image": "images/company-6.jpg",
         "membershipLevel": "Silver",
         "otherInfo": "Additional information about Company 6"
       },
@@ -59,8 +59,9 @@
         "address": "999 Walnut St, City, State, Zip",
         "phone": "444-333-5555",
         "website": "http://www.company7.com",
-        "image": "images/copmagny-7.jpg",
+        "image": "images/company-7.jpg",
         "membershipLevel": "Bronze",
         "otherInfo": "Additional information about Company 7"
-      },
-    ]}
+      }
+    ]
+}
