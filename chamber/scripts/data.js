@@ -48,7 +48,9 @@ function showSlides(n) {
 
 //get the time form the form
 
-document.getElementById("timestamp").value = new Date().toLocaleString();
+document.addEventListener("DOMContentLoaded", function() {
+   document.getElementById("timestamp").value = new Date().toLocaleString();
+});
 
 
 //directory

@@ -88,6 +88,7 @@
 }
 .footer-container .footer-section-container .section-div-container .section-div-ul-container a, .footer-container .footer-section-container .section-div-container .section-div-ul-container ul, .footer-container .footer-section-container .section-div-container .section-div-ul-container li {
   color: #fff;
+  font-size: 12px;
 }
 .footer-container .footer-section-container li {
   font-size: 10px;
@@ -223,9 +224,11 @@ form label {
   justify-content: center;
 }
 .mySlides img {
+
   vertical-align: middle;
   height: 250px;
   width: 100%;
+  object-fit:cover
 }
 
 .containerSlide {
@@ -575,6 +578,10 @@ object-fit:contain;
   }
   .hero-section-card h2, .hero-section-card p {
     color: #fff;
+  }
+
+  .h2-compagnie{
+    margin-top: 400px;
   }
   .hero-section-card .hero-sectio-button {
     margin-top: 50px;
