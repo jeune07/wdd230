@@ -14,6 +14,10 @@
     width: 100px;
     height: 100px;
   }
+
+  /* .hamburger{
+    display: none;
+  } */
   /* Media Query for Screens <= 810px */
   @media screen and (max-width: 810px) {
     /* Navigation Styles */
@@ -33,9 +37,9 @@
   
     /* Navigation List Styles */
 
-    .hamburger{
-      display: block;
-    }
+    /* .hamburger{
+      display: none;
+    } */
 
     .hamburger.active .bar:nth-child(2){
       opacity: 0;

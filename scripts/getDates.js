@@ -18,6 +18,7 @@ hamburger.addEventListener("click", () => {
 
 });
 const removeActiveClass=document.querySelectorAll(".nav-link");
+
 removeActiveClass.forEach(a => a.addEventListener("click",()=>{
     hamburger.classList.remove("active");
     ulContainer.classList.remove("active");
@@ -58,13 +59,13 @@ function checkPasswordMatch() {
 
 
 const images ={
-  clear :"../images/clear.png",
-  clouds: "../images/clouds.png",
-  drizzle :"../images/drizzle.png",
-  humidity: "../images/humidity.png",
-  mist:"../images/mist.pngg",
-  rain: "../images/rain.png",
-  snow: "../images/snow.png",
+  clear :"images/clear.png",
+  clouds: "images/clouds.png",
+  drizzle :"images/drizzle.png",
+  humidity: "images/humidity.png",
+  mist:"images/mist.pngg",
+  rain: "images/rain.png",
+  snow: "images/snow.png",
 
 }
 
@@ -87,8 +88,6 @@ const description=document.querySelector(".description");
       }
   
       const responseToJson = await response.json();
-  
-      console.log(responseToJson);
       temperature.innerHTML = responseToJson.main.temp + "°C";
       description.innerHTML = responseToJson.weather[0].description;
   
@@ -123,3 +122,10 @@ const description=document.querySelector(".description");
   };
 
   handlerWeatherinfo(weatherurl);
+
+
+
+  //hamburger
+
+
+  

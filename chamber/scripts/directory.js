@@ -9,7 +9,7 @@ const fetchingData = async () => {
       }
       
       const jsonData = await response.json();
-      console.log(jsonData);
+      // console.log(jsonData);
   
       jsonData.members.forEach((company) => {
         const card = document.createElement("div");
