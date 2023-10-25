@@ -465,7 +465,28 @@ object-fit:contain;
     gap: 30px;
   }
 
+  .cta-Join{
+    margin-top: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 132px;
+    cursor: pointer;
+   
+  }
 
+  .cta-Join :hover {
+    color: rgba(73, 224, 73, 0.89);
+  }
+
+  .container-cta-Join{
+    margin-top: 200px;
+    margin-bottom: 200px;
+  }
+
+ .hero-section-card:hover{
+    transform: scale(1.5);
+  }
 
 
 
