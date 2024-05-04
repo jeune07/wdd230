@@ -9,6 +9,18 @@ let lastModifiedDate = document.lastModified;
 let LastModifiedElement = document.getElementById("LastModified");
 // Check if lastModifiedDate is valid (not empty or undefined)
 if (lastModifiedDate && LastModifiedElement) {
-    // Update the text content of the element to display the last modified date
-    LastModifiedElement.textContent = lastModifiedDate;
+// Update the text content of the element to display the last modified date
+LastModifiedElement.textContent = lastModifiedDate;
 }
+//responsive side
+let hamburguer = document.querySelector("#mybutton");
+let navElement= document.querySelector(".myLinks");
+
+
+hamburguer.addEventListener("click",()=>{
+
+    navElement.classList.toggle("open");
+    hamburguer.classList.toggle("open");
+
+
+})
