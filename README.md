@@ -1,1 +1,1 @@
-# wdd230
+background-color: rgba(0, 0, 0, 0); background-repeat: no-repeat; background-image: url(&quot;img/big-14.jpg&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;

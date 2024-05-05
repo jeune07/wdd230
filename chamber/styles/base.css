@@ -1,0 +1,218 @@
+:root {
+    --red-color: #c1121f;
+    --cream-color: #fdf0d5;
+    --navy-color: #0c567d;
+    --sky-blue-color: #669bbc;
+  }
+
+.roboto-regular {
+    margin-top: 6rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+/*new css*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ /* body {
+  background: var(--cream-color);
+
+}  */
+/*Navigation start*/
+ .navMenu {  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 80px;
+  background-color:var(--sky-blue-color);
+  width: 100%;
+} 
+
+.navMenu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  /* width: 80px; */
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: var(--red-color);
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: var(--red-color);
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(110px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  -webkit-transform: translateX(285px);
+  transform: translateX(285px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+/*Navigation end*/
+
+.hero_background_image {
+    width: 100%;
+    height: 600px;
+    background-image: url("../images/business-meeting-dessalines-chamber.jpg");
+    object-fit: fill;
+    /* background-size: cover; */
+    background-position: center;
+  }
+/* title animation start*/
+.rotating-text {
+    margin-top: 6rem;
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: rgb(99, 92, 228);
+    transform: translateX(-80px);
+  }
+  
+  .rotating-text p {
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+  }
+  
+  .rotating-text .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+  }
+  
+  .rotating-text .word .letter {
+    transform-origin: center center 25px;
+  }
+  
+  .rotating-text .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+  }
+  
+  .rotating-text .word .letter.in {
+    transition: 0.38s ease;
+  }
+  
+  .rotating-text .word .letter.behind {
+    transform: rotateX(-90deg);
+  }
+  
+  /* Palette Colors */
+  .alizarin {
+    color: #e74c3c;
+  }
+  
+  .wisteria {
+    color: #8e44ad;
+  }
+  
+  .peter-river {
+    color: #3498db;
+  }
+  
+  .emerald {
+    color: #2ecc71;
+  }
+  
+  .sun-flower {
+    color: #f1c40f;
+  }
+
+  .hero_background_image{
+    display: flex;
+    justify-content: center;
+  }
+
+  /* title animation End*/
+
+
+  /*  Call to action  button*/ 
+
+.myButton {
+	box-shadow: 3px 4px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:5px;
+	border:1px solid #337bc4;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:12px 44px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.btn-cta{
+  margin-top: 20px;
+  width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+      
