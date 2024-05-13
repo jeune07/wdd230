@@ -10,7 +10,7 @@
     <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
     <!-- SOcial media start -->
     <meta property="og:title" content="Wdd230- Jeune WInsley Home page">
-    <meta property="og:type" content="article" />
+    
     <meta property="og:description" content="JS-CSS-HTML-Frontend Development">
     <meta property="og:image" content="./images/winsley_img_profile.jpg">
     <meta property="og:url" content="https://jeune07.github.io/">
@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <img src="./images/winsley_img_profile.jpg" alt="" height="50" width="50">
+        <img src="./images/winsley_img_profile.webp" alt="" height="50" width="50">
         <span>Winsley Jeune</span>
     </header>
     <nav>
@@ -44,6 +44,15 @@
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
+
+       <div class="hero-image">
+        <picture>
+            <source srcset="https://www.churchofjesuschrist.org/imgs/88914efd90d911ecadf9eeeeac1ed77b0d52f21d/full/320%2C/0/default" media="(max-width:400px)">
+            <source srcset="https://www.churchofjesuschrist.org/imgs/e02ad85a9f8a3c4fc4192a1d5a7969a2e3cbfcc7/full/320%2C/0/default" media="(max-width:960px)">
+            <img src="https://www.churchofjesuschrist.org/imgs/6007b20e832459d2d8540c15a8f5fa80d7dcff0f/full/320%2C/0/default" alt="Temple">
+        </picture>
+       </div>
+        
 
         <div class="cardContainner">
 
@@ -64,16 +73,27 @@
                 <h2>Information</h2>
                 <p>Brocton, Massachusetts</p>
                 <p>76° F, Shunshine</p>
-                <p>Page visits: 500 </p>
+                <p >Page visits: <span class="visits"></span></p>
+                
             </section>
         </div>
 
     </main>
+
+    <div class="adressMap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d94754.53157865324!2d-71.11006517980509!3d42.084354476208695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e484ceb50eb191%3A0xa17f71cd3d234e1e!2sBrockton%2C%20MA!5e0!3m2!1sen!2sus!4v1715564541685!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <footer>
+        <div>
         <p>&copy; <span id="currentYear"> </span></p>
         <p>Winsley jeune </p>
-        <p>United States</p>
+        <p>Brockton <span></span></p>        
         <p>Last modified : <span id="LastModified"> </span></p>
+       
+        </div>
+       
+        
     </footer>
 
     <script src="./scripts/getDates.js"></script>

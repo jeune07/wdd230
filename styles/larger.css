@@ -15,8 +15,7 @@
         position: relative;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transition: all 0.3s ease-in-out;
-      
+        transition: all 0.3s ease-in-out;      
     }
     #mybutton{
       display: none;
@@ -31,8 +30,7 @@
         width: 0;
         height: 3px;
         transition: all 0.3s ease-in-out;
-      }
-      
+      }      
       nav ul:hover {
         background-position: 0;
       }
@@ -41,9 +39,8 @@
         width: 100%;
       }
 
-
-
     .cardContainner {
+        margin-top: 20px;
         display: grid;
         grid-template-columns: 2fr 1fr; 
         gap: 20px; 

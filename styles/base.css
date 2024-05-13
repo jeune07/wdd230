@@ -77,11 +77,24 @@ ul.myLinks.open{
     content:"X";
 }
 
-
-  /* ul.myLinks.open{
-    display: block;    
+/* .hero-image{
+  display: flex;
+  justify-content: center;
+  position: relative;
+	top: 5px;  
+	
 } */
 
+.hero-image {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 5px;
+}
+
+.hero-image img {
+  width: 100%; /* Ensure all images fill the full width */
+}
 
 
 main{
@@ -119,10 +132,19 @@ ul{
     text-align: center;
 }
 
+.adressMap{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
 footer {
+  display: flex;
+    justify-content: space-evenly;
     padding: 2em 0;
     width: 100%;
     text-align: center;
     background: #788fd5e6;
     color: #fff;
+    flex-wrap: wrap;
   }
