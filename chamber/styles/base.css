@@ -158,7 +158,7 @@
   }
   
   .wisteria {
-    color: #8e44ad;
+    color: rgb(255 255 255);
   }
   
   .peter-river {
@@ -209,10 +209,37 @@
 }
 
 .btn-cta{
-  margin-top: 20px;
+  margin: 20px 0;
   width: 100%;
  display: flex;
  justify-content: center;
 }
 
-      
+.chamber-spotlight{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*FOoter*/
+
+footer{
+  background-color: var(--sky-blue-color);
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.contact-info,.quick-links,.social-media,.newsletter,.copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem;
+}
+
+footer a{
+  color: #fff;
+  text-decoration: none;
+}
