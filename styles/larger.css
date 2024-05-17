@@ -46,6 +46,11 @@
         gap: 20px; 
     }
 
+    .dark-css{
+      background-color: #000;
+      color: #fff;
+    }
+
     .card {        
         border: 1px solid #ccc;
         padding: 20px;

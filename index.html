@@ -31,6 +31,7 @@
     <header>
         <img src="./images/winsley_img_profile.webp" alt="" height="50" width="50">
         <span>Winsley Jeune</span>
+        <img class="dark-mode-svg" src="./images/dark-mode-svgrepo-com.svg" alt="dark icon" onclick="darkCSSButton()">
     </header>
     <nav>
         <button id="mybutton"></button>
@@ -41,6 +42,7 @@
             <li><a href="./week01/chamber-site-plan.html">Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
+        
     </nav>
     <main>
         <h1>WDD 230: Web Frontend Development</h1>
@@ -49,7 +51,7 @@
         <picture>
             <source srcset="https://www.churchofjesuschrist.org/imgs/88914efd90d911ecadf9eeeeac1ed77b0d52f21d/full/320%2C/0/default" media="(max-width:400px)">
             <source srcset="https://www.churchofjesuschrist.org/imgs/e02ad85a9f8a3c4fc4192a1d5a7969a2e3cbfcc7/full/320%2C/0/default" media="(max-width:960px)">
-            <img src="https://www.churchofjesuschrist.org/imgs/6007b20e832459d2d8540c15a8f5fa80d7dcff0f/full/320%2C/0/default" alt="Temple">
+            <img id ="hero-image-img"src="https://www.churchofjesuschrist.org/imgs/6007b20e832459d2d8540c15a8f5fa80d7dcff0f/full/320%2C/0/default" alt="Church of Latter-day Saints Temple">
         </picture>
        </div>
         
@@ -89,11 +91,8 @@
         <p>&copy; <span id="currentYear"> </span></p>
         <p>Winsley jeune </p>
         <p>Brockton <span></span></p>        
-        <p>Last modified : <span id="LastModified"> </span></p>
-       
+        <p>Last modified : <span id="LastModified"> </span></p>       
         </div>
-       
-        
     </footer>
 
     <script src="./scripts/getDates.js"></script>

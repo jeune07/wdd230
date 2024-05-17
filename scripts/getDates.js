@@ -38,3 +38,17 @@ if (numVisits !== 0) {
 numVisits++;
 
 localStorage.setItem("numVisits-ls", numVisits);
+
+//dark mode
+
+// let darkCSSButton= ()=>{
+//     let darkContainner= document.querySelector(".cardContainner")
+//     darkContainner.classList.toggle("dark-css")
+// }
+
+let darkCSSButton = () => {
+    let darkContainers = document.querySelectorAll(".card");
+    darkContainers.forEach(container => {
+        container.classList.toggle("dark-css");
+    });
+}
