@@ -2,7 +2,7 @@
     --red-color: #c1121f;
     --cream-color: #fdf0d5;
     --navy-color: #0c567d;
-    --sky-blue-color: #669bbc;
+    --sky-blue-color: #0B3FA8;
   }
 
 .roboto-regular {
@@ -59,6 +59,9 @@
   color: var(--red-color);
 }
 
+header h1,.visitMessage{
+  text-align: center;
+}
 .navMenu .dot {
   width: 6px;
   height: 6px;
@@ -163,7 +166,7 @@
   }
   
   .peter-river {
-    color: #3498db;
+    color: #55a2eb;
   }
   
   .emerald {
@@ -185,11 +188,11 @@
   /*  Call to action  button*/ 
 
 .myButton {
-	box-shadow: 3px 4px 0px 0px #1564ad;
+	box-shadow: 3px 4px 0px 0px #55a2eb;
 	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
-	background-color:#79bbff;
+	background-color:#55a2eb;
 	border-radius:5px;
-	border:1px solid #337bc4;
+	border:1px solid #55a2eb;
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
@@ -229,8 +232,8 @@ footer{
  
   bottom: 0;
   position: fixed;
-  background-color: var(--sky-blue-color);
-  color: #fff;
+  background-color:#0B3FA8;
+  color: #FAFAFA;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
@@ -320,8 +323,29 @@ footer a{
 }
 
 
+/*Alert message*/
 
+.alert {
+  padding: 20px;
+  background-color: #1A5F0C;
+  color: white;
+}
 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+/*Alert Message End*/
 
 
 
