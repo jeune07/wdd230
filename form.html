@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Welcome to the WDD 230 Web Development course! Explore JavaScript, CSS, HTML, UX, and UI principles in practical applications. Enhance your skills with hands-on projects and interactive learning experiences. Start your journey to becoming a proficient web developer today.">
+    <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
+    <!-- SOcial media start -->
+    <meta property="og:title" content="Wdd230- Jeune WInsley Home page">
+    
+    <meta property="og:description" content="JS-CSS-HTML-Frontend Development">
+    <meta property="og:image" content="./images/winsley_img_profile.jpg">
+    <meta property="og:url" content="https://jeune07.github.io/">
+    <!-- socila media end -->
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/larger.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Winsley Jeune - WDD 230 - Web Frontend Development</title>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon-assets/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="/favicon-assets/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <img src="./images/winsley_img_profile.webp" alt="" height="50" width="50">
+        <span>Winsley Jeune</span>
+        <img class="dark-mode-svg" src="./images/dark-mode-svgrepo-com.svg" alt="dark icon" onclick="darkCSSButton()">
+    </header>
+    <nav>
+        <button id="mybutton"></button>
+        <ul class="myLinks">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site</a></li>
+            <li><a href="./week01/chamber-site-plan.html">Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+        
+    </nav>
+    <main>
+        
+      <form action="" method="get">
+        <h1 class="messageTitleNow">Let us know what do you thing about us</h1>
+        <p id="errorMessage"></p>
+        <label for="userName">Please Enter Your User Name</label>
+        <input type="text" id="userName" name="userName" required>
+        <label for="userEmail">Please Enter Your Email Adresse</label>
+        <input type="email" id="userEmail" name="userEmail" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$">
+        <label for="userPassword">Please Enter Your password</label>
+        <input type="password" id="userPassword" name="userPassword" required pattern="[A-Za-z]{8,}">
+        <label for="userPasswordConfirmation">Please Confirm Your Password</label>
+        <input type="password" id="userPasswordConfirmation" name="userPasswordConfirmation" required pattern="[A-Za-z]{8,}">
+        <label for="ratingRange">What Is Your Rating</label>     
+        <div id="rangevalue">0</div>   
+        <input type="range" id="ratingRange" name="ratingRange" min="1" max="10" max="10" value="1" step="1"  list="rangeValues" >
+        
+        <datalist id="rangeValues">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </datalist>   
+        <button type="submit">Sumit Rating</button>     
+      </form> 
+    </main>
+    <footer>
+        <div>
+        <p>&copy; <span id="currentYear"> </span></p>
+        <p>Winsley jeune </p>
+        <p>Brockton <span></span></p>        
+        <p>Last modified : <span id="LastModified"> </span></p>       
+        </div>
+    </footer>
+
+    <script src="./scripts/getDates.js"></script>
+
+</body>
+
+</html>

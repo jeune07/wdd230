@@ -1,0 +1,47 @@
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    height: 40px;
+    border-radius: 10px;
+}
+
+.messageTitleNow{
+    text-align: center;
+    color: black;
+}
+ 
+
+@media screen and (max-width: 500px) {
+    
+    form {
+        display: flex;
+        flex-direction: orumn;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-bottom: 100px;
+        height: 500px;
+        justify-content: space-around;
+        align-items: stretch;
+    }
+
+    
+
+    
+    
+}
