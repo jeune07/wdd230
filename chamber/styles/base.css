@@ -311,6 +311,9 @@ footer a{
     gap:30px; */
     margin: 1.5rem;
   }
+  .container-all{
+
+  }
 
 
   /* .container {
@@ -385,13 +388,13 @@ footer a{
   color: transparent;
 }
 
-input {
+/* input {
   position: absolute;  
   opacity: 0;
   margin-top: 95vh;
   cursor: pointer;
-}
-
+} */
+/* 
 label {
   display: inline-block;
   width: 12px;
@@ -404,13 +407,13 @@ label {
   cursor: pointer;
   transition-duration: .4s;
   box-shadow: 0 0 20px 0 #000;
-}
-
+} */
+/* 
 input:checked + label{
   background-color: white;
-}
+} */
 
-input + label::after{
+/* input + label::after{
   content: '';
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512' width='100' style='fill:white'%3E%3Cpath d='M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z' /%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -425,13 +428,13 @@ input + label::after{
   top: 0;
   left: 0;
   z-index: 20;
-}
+} */
 
-input + label:hover::after {
+/* input + label:hover::after {
   background-size: 10px 10px;
-}
+} */
 
-input:checked + label::after {
+/* input:checked + label::after {
   background-image: none;
   width: 100%;
   left: 0;
@@ -452,9 +455,9 @@ input:checked + label + .slide + input + label::after {
 
 input:focus + label{
   box-shadow: 0 0 0 2px teal, 0 0 18px white;
-}
+} */
 
-.slide {
+/* .slide {
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -467,16 +470,16 @@ input:focus + label{
   transform: translateX(-100%);
   transition-duration: .4s;
   opacity: 1;
-}
+} */
 
-input:checked ~ .slide {
+/* input:checked ~ .slide {
   transform: translateX(100%);
 }
 
 input:checked + label + .slide {
   transform: translateX(0);
   opacity: 1;
-}
+} */
 
 .bg1{
   background-image: url(https://images.unsplash.com/photo-1422806310414-91469fe4977e?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=114e7a73b2385128045a5555b981e939);
@@ -496,3 +499,51 @@ input:checked + label + .slide {
   object-fit: contain;}
 
 /*slider evennt Fin*/
+
+/*form joins us*/
+main {
+  width: 500px;
+  margin: 0 auto 500px auto;
+
+}
+.container-all{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;  
+    
+}
+
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  width: 500px; 
+}
+
+
+
+.form-container form label{
+  font-size: 18px;
+}
+
+.form-container form input,button {
+  height: 44px;
+}
+
+@media (width  <= 480px) {
+  .main-grid{
+    /* display: grid;
+    grid-template-columns: 1fr;
+    gap:30px; */
+    margin: 1.5rem;
+  }
+  main{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .container-all{
+    width: 100%;
+
+  }
+}

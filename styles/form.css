@@ -31,7 +31,7 @@ input{
     
     form {
         display: flex;
-        flex-direction: orumn;
+        flex-direction: column;
         flex-wrap: wrap;
         margin-top: 20px;
         margin-bottom: 100px;
