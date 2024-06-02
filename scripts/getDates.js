@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
+
+    // Update current year
     let currentYearElement = document.getElementById("currentYear");
     if (currentYearElement) {
         currentYearElement.textContent = new Date().getFullYear();
@@ -20,6 +22,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
             navElement.classList.toggle("open");
             hamburger.classList.toggle("open");
         });
+    } else {
+        console.warn("Hamburger menu or nav element not found.");
     }
 
     // Visits display
@@ -33,6 +37,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         }
         numVisits++;
         localStorage.setItem("numVisits-ls", numVisits);
+    } else {
+        console.warn("Visits display element not found.");
     }
 
     // Dark mode
@@ -43,45 +49,97 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     };
 
-// Ensure dark mode button exists and add event listener
+    // Ensure dark mode button exists and add event listener
     let darkModeButton = document.querySelector("#darkModeButton");
     if (darkModeButton) {
         darkModeButton.addEventListener("click", darkCSSButton);
+    } else {
+        console.warn("Dark mode button not found.");
+    }
+
+    // Form
+    const rangevalue = document.getElementById("rangevalue");
+    const range = document.getElementById("ratingRange");
+
+    if (range && rangevalue) {
+        // RANGE event listener
+        range.addEventListener('change', displayRatingValue);
+        range.addEventListener('input', displayRatingValue);
+
+        function displayRatingValue() {
+            rangevalue.innerHTML = range.value;
+        }
+    } else {
+        console.warn("Range or range value element not found.");
+    }
+
+    const kp1 = document.querySelector("#userPassword");
+    const kp2 = document.querySelector("#userPasswordConfirmation");
+    const message = document.querySelector("#errorMessage");
+
+    if (kp1 && kp2 && message) {
+        kp2.addEventListener("focusout", checkSame);
+
+        // This should be refactored.
+        function checkSame() {
+            if (kp1.value !== kp2.value) {
+                message.textContent = "❗PASSWORD DO NOT MATCH!";
+                message.style.color = "red";
+                message.style.visibility = "show";
+                kp2.style.backgroundColor = "#fff0f3";
+                kp2.value = "";
+                kp2.focus();
+            } else {
+                message.style.display = "none";
+                kp2.style.backgroundColor = "#fff";
+                kp2.style.color = "#000";
+            }
+        }
+    } else {
+        console.warn("Password elements or error message element not found.");
     }
 });
 
-// Form
 
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("ratingRange");
+/*feching data from  */
+const lat =19.2833;
+const lon =-72.5;
+const APIKey="3d555765cff0e11f2bab03921ea9488d";
+const URL =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}&units=metric`;
+let temperature ="No data";
+let weatherIcon ="";
+let alternativeText=""
 
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
+const fetchingData = async ()=>{
+    try {
+        const gettingData = await fetch(URL);
+       const dataToJson = await gettingData.json();
+       temperature = dataToJson.main.temp;
+       weatherIcon = dataToJson.weather[0].icon;
+       alternativeText = dataToJson.weather[0].description;
+       displayingData ()
+    
+        
+    } catch (error) {
+        console.log('something is going wrong please see', error)
+        
+    }
 }
 
+fetchingData();
 
-const kp1 = document.querySelector("#userPassword");
-const kp2 = document.querySelector("#userPasswordConfirmation");
-const message = document.querySelector("#errorMessage");
+//Select element form the DOM
 
-kp2.addEventListener("focusout", checkSame);
+let currentTemperature = document.getElementById("temperatureDisplay");
+let currentWeatherIcon = document.getElementById("weather-icon");
+let iconPath = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
-// This should be refactored.
-function checkSame() {
-	if (kp1.value !== kp2.value) {
-		message.textContent = "❗PASSWORD DO NOT MATCH!";
-        message.style.color="red"
-		message.style.visibility = "show";
-		kp2.style.backgroundColor = "#fff0f3";
-		kp2.value = "";
-		kp2.focus();
-	} else {
-		message.style.display = "none";
-		kp2.style.backgroundColor = "#fff";
-		kp2.style.color = "#000";
-	}
+function displayingData (){
+    currentTemperature.innerHTML=temperature + " °C";
+    currentWeatherIcon.setAttribute("src",`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
+    currentWeatherIcon.setAttribute("alt",alternativeText)
+    // console.log("I am here",temperature)
+
 }
+
+displayingData ()

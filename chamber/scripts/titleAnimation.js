@@ -1,3 +1,5 @@
+// import {APIKEY}  from "./config"
+
 document.addEventListener('DOMContentLoaded', () => {
     let words = document.querySelectorAll('.word');
     words.forEach(word => {
@@ -100,4 +102,25 @@ function hideParentElement(element) {
   element.parentElement.style.display = 'none';
 }
 
+ /* API Calls */
+
  
+//  const APIKEY =APIKEY;
+//  const lon= -72.5;
+//  const lat =  19.2833;
+//  const URL =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKEY}`;
+
+//  const  temperarature = async ()=>{
+//   try {
+    
+//   let fechingData =await fetch(URL);
+//   let response = await fechingData.json()
+//   console.log(response)
+    
+//   } catch (error) {
+//     console.log("Something is going wrong while fetching the data", error)    
+//   }
+//  }
+
+
+//  temperarature()

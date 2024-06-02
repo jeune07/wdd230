@@ -49,6 +49,11 @@ nav ul li a {
   }
 
 
+ .weatherInfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @media screen and (max-width: 550px)  {
 
   #mybutton::before{
