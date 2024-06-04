@@ -129,7 +129,6 @@ const fetchingData = async ()=>{
 fetchingData();
 
 //Select element form the DOM
-
 let currentTemperature = document.getElementById("temperatureDisplay");
 let currentWeatherIcon = document.getElementById("weather-icon");
 let iconPath = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
@@ -143,3 +142,8 @@ function displayingData (){
 }
 
 displayingData ()
+
+//Displaying data form the json file
+
+let titleUrl = getElementById("titleUrl");
+

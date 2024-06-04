@@ -1,20 +1,39 @@
 
-
-
-const weeks =[{
-    "weeks": "Week 1
-",
-"links":[
+const weeks = 
+[
     {
-
-    "URL":"",
-    "title":""
+        "week": "Week 1",
+        "links": [
+            {"URL": "http://example.com/1", "title": "Leaning Activities"},
+            
+        ]
     },
     {
-        
-    "URL":"",
-    "title":""
-
+        "week": "Week 2",
+        "links": [
+            {"URL": "http://example.com/1", "title": "Leaning Activities"},
+            
+        ]
+    },
+    {
+        "week": "Week 3",
+        "links": [
+            {"URL": "http://example.com/1", "title": "Leaning Activities"},
+           
+        ]
+    },
+    {
+        "week": "Week 4",
+        "links": [
+            {"URL": "http://example.com/1", "title": "Leaning Activities"},
+            
+        ]
+    },
+    {
+        "week": "Week 5",
+        "links": [
+            {"URL": "http://example.com/1", "title": "Leaning Activities"},
+            
+        ]
     }
-],
-}]
+];
