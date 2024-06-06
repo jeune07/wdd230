@@ -145,5 +145,24 @@ displayingData ()
 
 //Displaying data form the json file
 
-let titleUrl = getElementById("titleUrl");
+// let titleUrl = getElementById("titleUrl");
 
+
+//Fetching class data
+
+const classDataUrl = "https://raw.githubusercontent.com/jeune07/wdd230/main/data/links.json";
+
+const fetchingClassInfo = async () => {
+    try {
+        let response = await fetch(classDataUrl);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        let classInfoData = await response.json();
+        console.log(classInfoData);
+    } catch (error) {
+        console.error('Error fetching class information:', error);
+    }
+};
+
+fetchingClassInfo();

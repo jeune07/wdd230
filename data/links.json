@@ -1,39 +1,32 @@
-
-const weeks = 
 [
     {
         "week": "Week 1",
         "links": [
-            {"URL": "http://example.com/1", "title": "Leaning Activities"},
-            
+            {"URL": "http://example.com/1", "title": "Leaning Activities"}
         ]
     },
     {
         "week": "Week 2",
         "links": [
-            {"URL": "http://example.com/1", "title": "Leaning Activities"},
-            
+            {"URL": "http://example.com/1", "title": "Leaning Activities"}
         ]
     },
     {
         "week": "Week 3",
         "links": [
-            {"URL": "http://example.com/1", "title": "Leaning Activities"},
-           
+            {"URL": "http://example.com/1", "title": "Leaning Activities"}
         ]
     },
     {
         "week": "Week 4",
         "links": [
-            {"URL": "http://example.com/1", "title": "Leaning Activities"},
-            
+            {"URL": "http://example.com/1", "title": "Leaning Activities"}
         ]
     },
     {
         "week": "Week 5",
         "links": [
-            {"URL": "http://example.com/1", "title": "Leaning Activities"},
-            
+            {"URL": "http://example.com/1", "title": "Leaning Activities"}
         ]
     }
 ]
