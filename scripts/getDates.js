@@ -102,27 +102,27 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 /*feching data from  */
-const lat =19.2833;
-const lon =-72.5;
-const APIKey="3d555765cff0e11f2bab03921ea9488d";
-const URL =`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}&units=metric`;
-let temperature ="No data";
-let weatherIcon ="";
-let alternativeText=""
+const lat = 19.2833;
+const lon = -72.5;
+const APIKey = "3d555765cff0e11f2bab03921ea9488d";
+const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${APIKey}&units=metric`;
+let temperature = "No data";
+let weatherIcon = "";
+let alternativeText = ""
 
-const fetchingData = async ()=>{
+const fetchingData = async () => {
     try {
         const gettingData = await fetch(URL);
-       const dataToJson = await gettingData.json();
-       temperature = dataToJson.main.temp;
-       weatherIcon = dataToJson.weather[0].icon;
-       alternativeText = dataToJson.weather[0].description;
-       displayingData ()
-    
-        
+        const dataToJson = await gettingData.json();
+        temperature = dataToJson.main.temp;
+        weatherIcon = dataToJson.weather[0].icon;
+        alternativeText = dataToJson.weather[0].description;
+        displayingData()
+
+
     } catch (error) {
         console.log('something is going wrong please see', error)
-        
+
     }
 }
 
@@ -133,15 +133,15 @@ let currentTemperature = document.getElementById("temperatureDisplay");
 let currentWeatherIcon = document.getElementById("weather-icon");
 let iconPath = `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`
 
-function displayingData (){
-    currentTemperature.innerHTML=temperature + " °C";
-    currentWeatherIcon.setAttribute("src",`https://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
-    currentWeatherIcon.setAttribute("alt",alternativeText)
+function displayingData() {
+    currentTemperature.innerHTML = temperature + " °C";
+    currentWeatherIcon.setAttribute("src", `https://openweathermap.org/img/wn/${weatherIcon}@2x.png`);
+    currentWeatherIcon.setAttribute("alt", alternativeText)
     // console.log("I am here",temperature)
 
 }
 
-displayingData ()
+displayingData()
 
 //Displaying data form the json file
 
@@ -159,7 +159,28 @@ const fetchingClassInfo = async () => {
             throw new Error(`HTTP error! Status: ${response.status}`);
         }
         let classInfoData = await response.json();
-        console.log(classInfoData);
+
+        classInfoData.forEach((infon) => {
+            let titleUl = document.getElementById("titleUrl");
+            
+            // Create a list item for the week
+            let li = document.createElement("li");
+            li.innerText = infon.week;
+            
+            // Create a span to hold the links
+            let span = document.createElement("span");
+
+            infon.links.forEach((link) => {
+                let anchor = document.createElement("a");
+                anchor.href = link.URL;
+                anchor.innerText = link.title;
+                anchor.style.marginRight = "10px"; // Adding some space between links
+                span.appendChild(anchor);
+            });
+
+            li.appendChild(span);
+            titleUl.appendChild(li);
+        });
     } catch (error) {
         console.error('Error fetching class information:', error);
     }
