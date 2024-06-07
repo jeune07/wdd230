@@ -502,7 +502,7 @@ input:checked + label + .slide {
 
 /*form joins us*/
 main {
-  width: 500px;
+  /* width: 500px; */
   margin: 0 auto 500px auto;
 
 }
