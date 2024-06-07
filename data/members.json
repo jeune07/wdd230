@@ -1,0 +1,66 @@
+[
+    {
+        "names": "Company One",
+        "addresses": "123 Main Street, Anytown, USA",
+        "phoneNumbers": "+1-555-1234",
+        "websiteURLs": "https://www.companyone.com",
+        "image": "https://images.pexels.com/photos/5273667/pexels-photo-5273667.jpeg",
+        "membershipLevel": "Gold"
+    },
+    {
+        "names": "Company Two",
+        "addresses": "456 Elm Avenue, Othertown, USA",
+        "phoneNumbers": "+1-555-5678",
+        "websiteURLs": "https://www.companytwo.com",
+        "image": "https://images.pexels.com/photos/8068876/pexels-photo-8068876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "membershipLevel": "Silver"
+    },
+    {
+        "names": "Company Three",
+        "addresses": "789 Oak Road, Anycity, USA",
+        "phoneNumbers": "+1-555-9012",
+        "websiteURLs": "https://www.companythree.com",
+        "image": "https://images.pexels.com/photos/7648001/pexels-photo-7648001.jpeg",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "names": "Company Four",
+        "addresses": "321 Cedar Lane, Somewhereville, USA",
+        "phoneNumbers": "+1-555-3456",
+        "websiteURLs": "https://www.companyfour.com",
+        "image": "https://images.pexels.com/photos/6930549/pexels-photo-6930549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "membershipLevel": "Platinum"
+    },
+    {
+        "names": "Company Five",
+        "addresses": "654 Pine Street, Nowheretown, USA",
+        "phoneNumbers": "+1-555-7890",
+        "websiteURLs": "https://www.companyfive.com",
+        "image": "https://images.pexels.com/photos/8353802/pexels-photo-8353802.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "membershipLevel": "Gold"
+    },
+    {
+        "names": "Company Six",
+        "addresses": "987 Maple Drive, Anywhere, USA",
+        "phoneNumbers": "+1-555-2345",
+        "websiteURLs": "https://www.companysix.com",
+        "image": "https://images.pexels.com/photos/4117560/pexels-photo-4117560.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "membershipLevel": "Silver"
+    },
+    {
+        "names": "Company Seven",
+        "addresses": "555 Birch Avenue, Elsewhere, USA",
+        "phoneNumbers": "+1-555-6789",
+        "websiteURLs": "https://www.companyseven.com",
+        "image": "https://images.pexels.com/photos/8068876/pexels-photo-8068876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "membershipLevel": "Bronze"
+    },
+    {
+        "names": "Company Eight",
+        "addresses": "888 Willow Street, Nowhere, USA",
+        "phoneNumbers": "+1-555-1234",
+        "websiteURLs": "https://www.companyeight.com",
+        "image": "https://images.pexels.com/photos/259006/pexels-photo-259006.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "membershipLevel": "Platinum"
+    }
+]

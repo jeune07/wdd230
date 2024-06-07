@@ -527,9 +527,9 @@ main {
   font-size: 18px;
 }
 
-.form-container form input,button {
+/* .form-container form input,button {
   height: 44px;
-}
+} */
 
 @media (width  <= 480px) {
   .main-grid{
